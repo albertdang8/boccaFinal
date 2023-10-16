@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
 
 const NavBar = () => {
   return (
-    <nav className='min-w-screen'>NavBar</nav>
-  )
-}
+    <div className="w-full bg-[#4747475f] backdrop-blur-md fixed z-50">
+      <nav className="flex justify-between items-center h-20 max-w-[1240px] mx-auto max-md:flex-col kanit">
+        <h1 className="text-primary font-bold">BoccaBocca Pizza</h1>
+        <div>
+          <ul className="text-primary">
+            <li>
+              <a href="#menu">Menu</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
-export default NavBar
+export default NavBar;
