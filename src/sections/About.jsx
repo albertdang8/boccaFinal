@@ -1,9 +1,8 @@
 const About = () => {
   return (
-    <div className="">
-      <section className="container flex flex-wrap justify-around items-center gap-8 max-sm:flex-col">
-        <div className="mix-w-screen flex flex-col gap-4 justify-center items-center max-w-[80ch]">
-          <h2 className="text-4xl">Origin</h2>
+      <section className="container flex flex-wrap-reverse justify-around items-center gap-8 mb-24">
+        <div className="mix-w-screen flex flex-col gap-4 justify-center items-center max-w-[80ch] kanit">
+          <h2 className="text-4xl font-semibold">Origin</h2>
           <p className="text-xl indent-8">
             {`Bocca Bocca pizza started with humble beginnings and big dreams. Tommy
           Beckelheimer started out making pizzas for friends in his backyard,
@@ -30,11 +29,10 @@ const About = () => {
           Now he got his own friend to make this website for him!`}
           </p>
         </div>
-        <div className="">
-          <img src="/DSC05825.jpg" alt="" className="h-[600px] rounded-xl" />
+        <div className="p-2 bg-secondary rounded-xl">
+          <img src="/DSC05825.jpg" alt="" className="h-[600px] rounded-lg" />
         </div>
       </section>
-    </div>
   );
 };
 
