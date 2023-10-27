@@ -1,21 +1,22 @@
 import NavBar from "./components/NavBar/NavBar";
-import HeroSection from "./sections/HeroSection";
-import Carousel from "./sections/Carousel";
-import About from "./sections/About";
-import Menu from "./sections/Menu";
-
-
+import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Menu from "./sections/Menu";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <HeroSection />
-      <Carousel />
-      <About />
-      <Menu />
-      <Footer />
+      <BrowserRouter>
+        <NavBar />
+
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

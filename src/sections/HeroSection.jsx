@@ -8,7 +8,7 @@ const HeroSection = () => {
         <img
           src="/wood-logo.jpg"
           alt="Bocca Bocca logo"
-          className="rounded-lg transition-transform transform hover:scale-105"
+          className="rounded-lg"
         />
       </div>
       <div className="max-w-[800px] px-4 flex flex-col gap-4">
