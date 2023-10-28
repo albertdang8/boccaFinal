@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div className="w-full bg-[#742706b4] backdrop-blur-md fixed z-50">
-      <nav className="flex justify-between items-center h-16 max-w-[1240px] mx-auto max-md:flex-col kanit">
+      <nav className="flex justify-between items-center min-h-16 max-w-[1240px] mx-auto max-md:flex-col kanit container">
         <h1 className="text-[#00c2ca] font-bold">BoccaBocca Pizza</h1>
         <div>
-          <ul className="text-[#00c2ca] flex gap-8 pb-2">
-            <li className="nav__link">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="nav__link">
-              <Link to="/menu">Menu</Link>
-            </li>
+          <ul className="text-[#00c2ca] flex pb-2">
+            <Link to="/">
+              <li className="nav__link py-4 px-8">Home</li>
+            </Link>
+            <Link to="/menu">
+              <li className="nav__link py-4 px-8">Menu</li>
+            </Link>
           </ul>
         </div>
       </nav>
