@@ -7,11 +7,14 @@
 
 
 html {
-  font-size: 16px;
-  background-color: #faf5f5;
+    font-size: 16px;
+    background-color: #faf5f5;
+    scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -25,12 +28,18 @@ body {
     min-height: 100vh;
 }
 
-img, picture, svg, video {
+img,
+picture,
+svg,
+video {
     display: block;
     max-width: 100%;
 }
 
-input, textarea, button, select {
+input,
+textarea,
+button,
+select {
     font: inherit;
 }
 
@@ -48,6 +57,21 @@ input, textarea, button, select {
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+.nav__link {
+    background:
+        linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+        linear-gradient(to right, #00DF9A, #00DF9A);
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    background-size: 0 0.1em, 100% 0.1em;
 }
 
 @media (min-width: 475px) {

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <section className='flex justify-center items-center bg-secondary text-background min-w-screen h-12 select-none'>~*Bocca_Bocca_Pizza*~</section>
   )
 }
 
