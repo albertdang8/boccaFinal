@@ -1,5 +1,5 @@
 import HeroSection from "../sections/HeroSection";
-import Carousel from "../sections/Carousel";
+import Carousel from "../components/Carousel/Carousel";
 import About from "../sections/About";
 import Menu from "../sections/Menu";
 
