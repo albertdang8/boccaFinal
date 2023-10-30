@@ -48,12 +48,14 @@ const Carousel = () => {
   };
 
   return (
-    <div style={sliderStyle} className="my-8">
-      <div className="slider-overlay"></div>
-      <MdKeyboardArrowLeft onClick={handleLeft} className="left-arrow" />
-      <MdKeyboardArrowRight onClick={handleRight} className="right-arrow" />
-      {/* Add your content here */}
-    </div>
+    <section className="my-8 bg-[#c6b061] py-4">
+      <div style={sliderStyle}>
+        <div className="slider-overlay"></div>
+        <MdKeyboardArrowLeft onClick={handleLeft} className="left-arrow" />
+        <MdKeyboardArrowRight onClick={handleRight} className="right-arrow" />
+        {/* Add your content here */}
+      </div>
+    </section>
   );
 };
 

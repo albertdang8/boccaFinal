@@ -1,6 +1,6 @@
 const About = () => {
   return (
-      <section className="container flex flex-wrap-reverse justify-around items-center gap-8 mb-24">
+      <section className="container flex flex-wrap justify-around items-center gap-8 mb-24">
         <div className="mix-w-screen flex flex-col gap-4 justify-center items-center max-w-[80ch] kanit">
           <h2 className="text-4xl font-semibold">Origin</h2>
           <p className="text-xl indent-8">
