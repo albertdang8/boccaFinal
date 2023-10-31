@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "./Carousel.css";
+import { useEffect, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import "./Carousel.css";
 
 const imageFolder = "/"; //public folder selected
 const imageFiles = [

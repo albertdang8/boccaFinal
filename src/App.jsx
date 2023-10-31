@@ -1,8 +1,8 @@
-import NavBar from "./components/NavBar/NavBar";
-import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
 import FullMenu from "./pages/FullMenu";
+import Home from "./pages/Home";
 
 function App() {
   return (
