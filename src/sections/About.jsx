@@ -2,7 +2,7 @@ const About = () => {
   return (
       <section className="container flex flex-wrap justify-around items-center gap-8 mb-24">
         <div className="mix-w-screen flex flex-col gap-4 justify-center items-center max-w-[80ch] kanit">
-          <h2 className="text-4xl font-semibold">Origin</h2>
+          <h2 className="text-4xl font-semibold select-none">Origin</h2>
           <p className="text-xl indent-8">
             {`Bocca Bocca pizza started with humble beginnings and big dreams. Tommy
           Beckelheimer started out making pizzas for friends in his backyard,
