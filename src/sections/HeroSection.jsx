@@ -12,7 +12,7 @@ const HeroSection = () => {
         />
       </div>
       <div className="max-w-[800px] px-4 flex flex-col gap-4">
-        <h1 className="rubik uppercase text-[#00c2ca] text-center text-[3rem]">
+        <h1 className="rubik uppercase text-[#FFA600] text-center text-[3rem] drop-shadow-md">
           Pop up with pizzazz!
         </h1>
         <p className="kanit text-center text-2xl">{`Hey! Welcome to our website. We're an Orange-County based food pop-up striving to bring out the beauty in simple foods, namely pizza. We like to hone in and focus on the details of our ingredients and cooking method to bring a tasteful product that can't be easily replicated elsewhere. In a word-- we never prioritize quantity over quality.`}</p>

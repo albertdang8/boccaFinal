@@ -40,17 +40,17 @@ const Carousel = () => {
 
   const sliderStyle = {
     backgroundImage: `url(${imageFolder}${currentImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundSize: "contain", //center
+    backgroundPosition: "center", //center
     backgroundRepeat: "no-repeat",
     height: "60vh",
     position: "relative",
   };
 
   return (
-    <section className="my-8 bg-[#c6b061] py-4">
+    <section className="my-8 bg-[#364409c1] py-4">
       <div style={sliderStyle}>
-        <div className="slider-overlay"></div>
+        {/* <div className="slider-overlay"></div> */}
         <MdKeyboardArrowLeft onClick={handleLeft} className="left-arrow" />
         <MdKeyboardArrowRight onClick={handleRight} className="right-arrow" />
         {/* Add your content here */}

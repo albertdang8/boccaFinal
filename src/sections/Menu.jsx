@@ -1,6 +1,6 @@
 const Menu = () => {
   return (
-    <div className="w-screen bg-accent">
+    <div className="w-full bg-accent">
       <section className="container mt-8 pt-16 pb-24 flex flex-col justify-center items-center gap-8">
         <div className="flex flex-col items-center">
           <h1 className="text-8xl font-bold rubik text-primary">Menu</h1>
