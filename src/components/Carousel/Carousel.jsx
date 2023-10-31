@@ -8,6 +8,7 @@ const imageFiles = [
   "logo.jpg",
   "menu.png",
   "wood-logo.jpg",
+  "me.jpg"
   // Add more image file names as needed
 ];
 
