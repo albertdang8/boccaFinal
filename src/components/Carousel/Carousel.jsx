@@ -54,7 +54,6 @@ const Carousel = () => {
         {/* <div className="slider-overlay"></div> */}
         <MdKeyboardArrowLeft onClick={handleLeft} className="left-arrow" />
         <MdKeyboardArrowRight onClick={handleRight} className="right-arrow" />
-        {/* Add your content here */}
       </div>
     </section>
   );

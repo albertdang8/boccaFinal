@@ -6,7 +6,7 @@ const Menu = () => {
           <h1 className="text-8xl font-bold rubik text-primary">Menu</h1>
           <span className="text-xs font-normal kanit">{`(subject to change)`}</span>
         </div>
-        <div aria-describedby="menu-description" className="p-16">
+        <div aria-describedby="menu-description" className="p-8">
           <img
             src="/menu.png"
             alt="Menu for Bocca Bocca"
