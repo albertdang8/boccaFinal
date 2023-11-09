@@ -1,5 +1,6 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Kanit:wght@300;400;700&family=Rubik:wght@300;400;700&display=swap');
 @import url('https://api.fonts.coollabs.io/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Rubik+Wet+Paint&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -49,6 +50,10 @@ select {
 
 .rubik {
     font-family: 'Rubik wet paint', Courier, monospace;
+}
+
+.test-font {
+    font-family: 'Cormorant Garamond', Courier, monospace;
 }
 
 .container {
