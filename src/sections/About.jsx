@@ -1,7 +1,7 @@
 const About = () => {
   return (
       <section className="container flex flex-wrap justify-around items-center gap-8 mb-24">
-        <div className="mix-w-screen flex flex-col gap-4 justify-center items-center max-w-[80ch] font-extrabold test-font">
+        <div className="mix-w-screen flex flex-col gap-4 justify-center items-center max-w-[80ch] font-bold test-font">
           {/* kanit */}
           <h2 className="text-5xl font-semibold select-none">Origin</h2>
           <p className="text-2xl indent-8">
