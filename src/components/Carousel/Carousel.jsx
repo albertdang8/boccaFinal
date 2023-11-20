@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import "./Carousel.css";
 
@@ -14,35 +14,51 @@ const imageFiles = [
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
+  const timerRef = useRef(null); // Ref for timer
 
   const handleRight = () => {
     setIndex((prevIndex) => (prevIndex + 1) % imageFiles.length);
+    resetTimer();
   };
 
   const handleLeft = () => {
     setIndex(
       (prevIndex) => (prevIndex - 1 + imageFiles.length) % imageFiles.length
     );
+    resetTimer();
   };
 
-  const rotateInterval = 5000; // Change image every 5 seconds (adjust as needed)
+  const rotateInterval = 5000; 
+
+  const resetTimer = () => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current); // Clear the existing timer
+    }
+    const newTimer = setInterval(() => {
+      handleRight(); 
+    }, rotateInterval);
+    timerRef.current = newTimer; // Set the new timer
+  };
 
   useEffect(() => {
-    const rotateImages = setInterval(() => {
-      handleRight(); // Automatically move to the next image
+    const timer = setInterval(() => {
+      handleRight(); // Automatically move to the next image after 5 seconds
     }, rotateInterval);
+    timerRef.current = timer; // Set timer reference
 
     return () => {
-      clearInterval(rotateImages); // Clear the interval on component unmount
+      if (timerRef.current) {
+        clearInterval(timerRef.current); // Clear the timer on component unmount
+      }
     };
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const currentImage = imageFiles[index];
 
   const sliderStyle = {
     backgroundImage: `url(${imageFolder}${currentImage})`,
-    backgroundSize: "contain", //center
-    backgroundPosition: "center", //center
+    backgroundSize: "contain", 
+    backgroundPosition: "center", 
     backgroundRepeat: "no-repeat",
     height: "60vh",
     position: "relative",
@@ -51,7 +67,6 @@ const Carousel = () => {
   return (
     <section className="my-8 bg-[#364409c1] py-4">
       <div style={sliderStyle}>
-        {/* <div className="slider-overlay"></div> */}
         <MdKeyboardArrowLeft onClick={handleLeft} className="left-arrow" />
         <MdKeyboardArrowRight onClick={handleRight} className="right-arrow" />
       </div>
