@@ -8,18 +8,19 @@ const HeroSection = () => {
         <img
           src="/wood-logo.jpg"
           alt="Bocca Bocca logo"
-          className="rounded-lg"
+          className="rounded-lg shadow-xl"
         />
       </div>
-      <div className="max-w-[800px] px-4 flex flex-col gap-4">
-        <h1 className="rubik uppercase text-[#FFA600] text-center text-[3rem] drop-shadow-xl">
+      <div className="max-w-[800px] px-4 flex flex-col gap-4 bg-accent w-screen py-12">
+        <h1 className="test-font font-bold uppercase text-center text-[3rem] drop-shadow-xl">
           Pop up with pizzazz!
+          {/* FFA600 */}
         </h1>
         <p className="kanit test-font font-bold text-center text-2xl">{`Hey! Welcome to our website. We're an Orange-County based food pop-up striving to bring out the beauty in simple foods, namely pizza. We like to hone in and focus on the details of our ingredients and cooking method to bring a tasteful product that can't be easily replicated elsewhere. In a word-- we never prioritize quantity over quality.`}</p>
       </div>
       <div className="py-4 px-8 rounded-md test-font">
         <h1 className="text-center mb-8 text-4xl font-bold">Contact Us!</h1>
-        <ul className="flex flex-col md:flex-row gap-6 text-primary">
+        <ul className="flex flex-col md:flex-row gap-6">
           <a
             href="https://www.instagram.com/BoccaBoccaPizza"
             target="_blank"
